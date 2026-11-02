@@ -1,0 +1,29 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Generado por ../../prep_data.py — SÍ se versiona (canonical/ y rules/, sus
+# fuentes, están gitignored en la raíz): sin esto el build de Vercel truena
+# por falta de src/data/mock.json. Si regeneras los datos, vuelve a commitearlo.
+*.db
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
