@@ -30,7 +30,7 @@ describe('planesIA', () => {
   });
 
   it('generarPlanes outputs suggestions', () => {
-    const planes = generarPlanes(mockEjercicio as Ejercicio, 'aumentar', 'TV', 20);
+    const planes = generarPlanes(mockEjercicio as Ejercicio, 'aumento');
     expect(planes.length).toBeGreaterThan(0);
   });
 });

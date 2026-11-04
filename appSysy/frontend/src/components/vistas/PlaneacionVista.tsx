@@ -65,7 +65,7 @@ export const PlaneacionVista: React.FC<Props> = ({ subId }) => {
               {layoutPlaneacion.layout.map((def: any) => (
                 <WidgetRenderer key={def.id} def={def} dataMap={{
                   'bars-mix': ejercicio.touchpoints.map(t => ({ id: t.nombre, label: t.nombre, value: t.inversion ?? 0 })),
-                  'gauge-alcance': (ejercicio.totales.alcance ?? 0) * 100
+                  'gauge-alcance': (ejercicio.totales.alcance_neto ?? 0) * 100
                 }} />
               ))}
             </div>

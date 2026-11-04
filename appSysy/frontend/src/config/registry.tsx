@@ -32,7 +32,7 @@ export interface WidgetRendererProps {
 }
 
 export const WidgetRenderer: React.FC<WidgetRendererProps> = ({ def, dataMap = {} }) => {
-  const Component = WIDGET_REGISTRY[def.type] || MissingWidget;
+  const Component: React.FC<any> = WIDGET_REGISTRY[def.type] || MissingWidget;
   const data = def.id && dataMap[def.id] ? dataMap[def.id] : undefined;
 
   const resolvedProps = {
