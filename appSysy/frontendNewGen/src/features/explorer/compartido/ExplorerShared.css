@@ -197,7 +197,7 @@
 
 .servicio-item:hover {
   border-color: rgba(0, 229, 153, 0.35);
-  background: rgba(24, 34, 50, 0.95);
+  background: color-mix(in srgb, #00E599 12%, var(--surface2));
   transform: translateX(3px);
 }
 
